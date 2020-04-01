@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Library </title>
+    </head>
+</head>
+<body>
+    <h1> Look Inna Book </h1>
+    <h3> Select Books </h3>
+    <p><%=@books%></p>
+    <%= form_tag("/search", method: "POST") do %>
+        <%= label_tag(:bookName, "Book Name:") %>
+        <%= text_field_tag(:bookName) %>
+        <br/>
+        <%= label_tag(:authorName, "Author Name:") %>
+        <%= text_field_tag(:authorName) %>
+        <br/>
+        <%= label_tag(:ISBN, "ISBN:") %>
+        <%= text_field_tag(:ISBN) %>
+        <br/>
+        <%= label_tag(:genre, "Genre:") %>
+        <%= text_field_tag(:genre) %>
+        <br/>
+        <%= submit_tag("Search") %>
+    <% end %>
+</body>
+</html>
