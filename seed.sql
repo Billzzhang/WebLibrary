@@ -9,5 +9,3 @@ INSERT INTO bookstores VALUES ('1', 'Look Inna Book', '506 Lakeridge D', '613-60
 
 INSERT INTO publishers VALUES ('blackrose@gmail.com', 'Black Rose Books', '1430 Hammarskjold Dr', '101106989', NOW(), NOW());
 INSERT INTO publishers VALUES ('cyclopspress@gmail.com', 'Cyclops Press', '1990  René-Lévesque Blvd', '4716151361', NOW(), NOW());
-
-INSERT INTO published VALUES ()
