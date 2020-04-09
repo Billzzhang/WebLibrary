@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Books</title>
+    </head>
+    <body>
+        <h1>All available books</h1>
+        <h4><a href="/">Home</a></h4>
+        <table class="table">
+        <div class="container">
+            <thead>
+                <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>ISBN</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <% @books.each do |book| %>
+                <tr>
+                    <td><%= book.title %></td>
+                    <td><%= book.author %></td>
+                    <td><%= book.genre %></td>
+                    <td><%= book.isbn %></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </div>
+        </table>
+    </body>
+</html>
