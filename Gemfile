@@ -10,7 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Pretty print the relations in console
 gem 'hirb', '~>0.7.3'
 # Bootstrap
-gem 'bootstrap', '~>4.0.0'
+gem 'bootstrap', '~>4.3.1'
 gem 'jquery-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
