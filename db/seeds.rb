@@ -5,7 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Book.delete_all
+Bookstore.delete_all
+Publisher.delete_all
 Book.create([{isbn: '978-1643132037', title:'Imagination: The Science of Your Mind''s Greatest Power', author: 'Jim Davies', genre: 'Educational'}])
 Book.create([{isbn: '978-0590353403', title:'Harry Potter And The Sorcerer''s Stone', author: 'J.K. Rowling', genre: 'Fantasy'}])
 Book.create([{isbn: '978-1524855765', title:'We Hope This Reaches You In Time', author: 'r.h. Sin', genre: 'Poetry'}])

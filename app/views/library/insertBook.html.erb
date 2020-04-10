@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Add a Book </title>
+    </head>
+</head>
+<body>
+    <h1> Look Inna Book </h1>
+    <h4><%= link_to "Go Back", add_path%></h4>
+    <% if @needsISBN%>
+        <h5>Inserted!</h5>
+    <% elsif @existingISBN %>
+        <h5>Needs ISBN number</h5>
+    <% else %>
+        <h5> Inserted <%= @name%>! </h5>
+    <% end %>
+</body>
+</html>

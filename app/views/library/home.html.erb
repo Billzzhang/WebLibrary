@@ -6,8 +6,9 @@
 </head>
 <body>
     <h1> Look Inna Book </h1>
-    <h3> Select Books </h3>
-    <h4> <a href="/books"> All books </a> </h4>
+    <h3> Search Books </h3>
+    <h4> <%= link_to "All Books", books_path%></h4>
+    <h4> <%= link_to "Add a Book", add_path%></h4>
     <%= form_tag("/search", method: "POST") do %>
         <div class="form-group">
         <%= label_tag :bookName, "Book Name:" %>
