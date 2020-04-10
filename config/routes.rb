@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   post 'search' => 'library#search', as: 'search'
   get 'search', to: redirect('/')
   get 'books' => 'library#index'
+  get 'add' => 'library#add'
     
 end
